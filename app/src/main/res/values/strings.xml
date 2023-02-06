@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">AndroidERestaurant</string>
-    <string name="starter">Entrée</string>
+    <string name="starter">Entrées</string>
     <string name="main">Plats</string>
-    <string name="finish">Dessert</string>
+    <string name="finish">Desserts</string>
     <string name="hello">Bienvenue</string>
     <string name="chez">chez</string>
     <string name="nom_restaurant">ZouaveRestaurant</string>
+    <string name="on_rigole">POV: tu es le poisson</string>
 </resources>
