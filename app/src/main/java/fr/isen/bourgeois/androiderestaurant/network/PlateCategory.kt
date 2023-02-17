@@ -6,5 +6,5 @@ import java.io.Serializable
 class PlateCategory (
     @SerializedName("name_fr") val name: String,
     @SerializedName("items") val items: List<Plate>
-    ): Serializable
+    ):java.io.Serializable
 

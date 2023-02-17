@@ -11,12 +11,12 @@ class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
-
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         buttonsListener ()
+
+        Log.d("lifeCycle", "HomeActivity onCreate")
     }
 
     private fun buttonsListener () {

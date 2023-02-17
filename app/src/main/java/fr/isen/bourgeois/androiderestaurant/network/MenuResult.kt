@@ -5,5 +5,4 @@ import java.io.Serializable
 
 
 class MenuResult(@SerializedName("data") val data: List<PlateCategory>): Serializable {
-
 }

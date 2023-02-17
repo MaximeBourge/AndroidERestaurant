@@ -75,15 +75,11 @@ class MenuActivity : AppCompatActivity() {
     private fun showDatas(category: PlateCategory ) {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = CustomAdapter(category.items) {
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra(DetailActivity.extraKeyDetail, it)
+            startActivity(intent)
         }
     }
-
-    private fun showPlates(plate: Plate ) {
-        val intent = Intent(this, DetailActivity::class.java)
-        intent.putExtra(DetailActivity.extraKeyDetail,plate)
-        startActivity(intent)
-    }
-
 
     private fun categoryName(): String{
         return when(this.currentCategory) {
